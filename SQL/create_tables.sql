@@ -6,18 +6,18 @@ CREATE TABLE Speciality (
     PRIMARY KEY (ID) ,
 ) ;
 
-INSERT  into Speciality (name) values ("عمومی");
-INSERT  into Speciality (name) values ("داخلی");
-INSERT  into Speciality (name) values ("جراحی مغز و اعصاب");
-INSERT  into Speciality (name) values ("زنان");
-INSERT  into Speciality (name) values ("کلیه و مجاری ادراری");
-INSERT  into Speciality (name) values ("چشم پزشکی");
-INSERT  into Speciality (name) values ("دندانپزشکی");
-INSERT  into Speciality (name) values ("ارتوپد");
-INSERT  into Speciality (name) values ("روانشناس");
-INSERT  into Speciality (name) values ("اپتومتری");
-INSERT  into Speciality (name) values ("فیزیوتراپی");
-INSERT  into Speciality (name) values ("پوست");
+INSERT  into Speciality (name) values (N'عمومی');
+INSERT  into Speciality (name) values (N'داخلی');
+INSERT  into Speciality (name) values (N'جراحی مغز و اعصاب');
+INSERT  into Speciality (name) values (N'زنان');
+INSERT  into Speciality (name) values (N'کلیه و مجاری ادراری');
+INSERT  into Speciality (name) values (N'چشم پزشکی');
+INSERT  into Speciality (name) values (N'دندانپزشکی');
+INSERT  into Speciality (name) values (N'ارتوپد');
+INSERT  into Speciality (name) values (N'روانشناس');
+INSERT  into Speciality (name) values (N'اپتومتری');
+INSERT  into Speciality (name) values (N'فیزیوتراپی');
+INSERT  into Speciality (name) values (N'پوست');
 
 CREATE TABLE Hospital(
     ID INTEGER identity (1,1),
