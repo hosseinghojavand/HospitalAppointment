@@ -83,7 +83,7 @@
         }
         public function create_doctor($id , $first_name, $last_name, $speciality_id , $extra_info , $gender ,$hospital_id ,$age ){
             $tsql = "EXEC create_doctor @id =?, @first_name =?,@last_name =?, @speciality_id =?, @extra_info =?, @score =? ,@gender =? , @hospital_id =? , @age =?" ;
-            $getResults = sqlsrv_query($this->db,$tsql,array($id , "N'" .$first_name ."'", $last_name, $speciality_id , $extra_info , 0 , $gender ,$hospital_id ,$age)) ;
+            $getResults = sqlsrv_query($this->db,$tsql,array($id , $first_name , $last_name, $speciality_id , $extra_info , 0 , $gender ,$hospital_id ,$age)) ;
             $rowsAffected = sqlsrv_rows_affected($getResults);
             if ($getResults == FALSE or $rowsAffected == FALSE)
                 die(FormatErrors(sqlsrv_errors()));
@@ -91,7 +91,7 @@
 
             // just for handle farsi char that was now supported in sps
             $tsql = "UPDATE doctor set first_name=(N'" .$first_name . "') , last_name=(N'" .$last_name."') , extra_info=(N'" .$extra_info. "') where id =" .$id ;
-            $getResults = sqlsrv_query($this->db,$tsql,array($id , "N'" .$first_name ."'", $last_name, $speciality_id , $extra_info , 0 , $gender ,$hospital_id ,$age)) ;
+            $getResults = sqlsrv_query($this->db,$tsql,array()) ;
             $rowsAffected = sqlsrv_rows_affected($getResults);
             if ($getResults == FALSE or $rowsAffected == FALSE)
                 die(FormatErrors(sqlsrv_errors()));
