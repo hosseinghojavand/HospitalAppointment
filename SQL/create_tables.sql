@@ -33,7 +33,7 @@ INSERT into Hospital (name , city , address , phone) values ("بیمارستان
 INSERT into Hospital (name , city , address , phone) values ("بیمارستان خورشید" , "اصفهان" , "خیابان خورشید" , "34515153" );
 
 CREATE TABLE Insurance(
-    ID INTEGER ,
+    ID INTEGER,
     name NVARCHAR(64) NOT NULL ,
     PRIMARY KEY (ID),
 );
