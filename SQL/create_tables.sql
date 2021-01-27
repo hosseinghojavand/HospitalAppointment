@@ -115,11 +115,9 @@ CREATE TABLE Comment(
 CREATE TABLE Authentication(
   ID INTEGER identity (1,1),
   patient_id INTEGER default  -1,
-  doctor_id integer default -1,
   password integer not null ,
 
   PRIMARY KEY (ID),
 
   FOREIGN KEY (patient_id) REFERENCES Patient(national_code) ON DELETE SET NULL ,
-  FOREIGN KEY (doctor_id) REFERENCES Doctor(ID) ON DELETE SET NULL ,
 );
