@@ -5,6 +5,3 @@ AS
     VALUES (@name,@city,@address,@phone)
 
 
-
-
-
