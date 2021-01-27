@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Doctor/CREATE.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Doctor/DELETE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Doctor/RETRIEVE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Hospital/CREATE.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Hospital/RETRIEVE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Insurance/RETRIEVE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Patient/CREATE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Patient/RETRIEVE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Speciality/CREATE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/SPs/Speciality/RETRIEVE.sql" dialect="Sybase" />
+    <file url="file://$PROJECT_DIR$/SQL/create_tables.sql" dialect="TSQL" />
+  </component>
+</project>
