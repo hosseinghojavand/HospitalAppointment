@@ -6,7 +6,7 @@
         private $connectionOptions = array(
             "Database" => "Hospital",
             "Uid" => "sa",
-            "PWD" => "2711378Hossein#"
+            "PWD" => "YourPassword"
         );
         private $conn = null ;   // using SINGELTON design pattern
         
