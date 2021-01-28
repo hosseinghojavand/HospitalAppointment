@@ -91,11 +91,15 @@ CREATE TABLE Attendance (
   time_id INTEGER,
   speciality_id INTEGER,
   patient_id INTEGER,
+  hospital_id INTEGER,
+  doctor_id INTEGER,
 
   PRIMARY KEY (ID),
   FOREIGN KEY (time_id) REFERENCES Speciality(ID) ON DELETE SET NULL ,
   FOREIGN KEY (patient_id) REFERENCES Patient(national_code) ON DELETE SET NULL ,
   FOREIGN KEY (time_id) REFERENCES Time(ID) ON DELETE SET NULL ,
+  FOREIGN KEY (hospital_id) REFERENCES Hospital(ID) ON DELETE SET NULL ,
+  FOREIGN KEY (doctor_id) REFERENCES Doctor(ID) ON DELETE SET NULL ,
 );
 
 
